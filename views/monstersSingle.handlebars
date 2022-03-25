@@ -1,0 +1,40 @@
+<main class="main mon-single-main container">
+    <section class="section sing-mon-section">
+        <div class="row">
+            <div class="col-md-8">
+                <figure>
+                    <img src="https://via.placeholder.com/450x550" alt="placeholder image">
+                    <figcaption class='figcap'>{{name}}</figcaption>
+                </figure>
+            </div>
+            <div class="col-md-2">
+                <aside class="aside">
+                    <h3 class="aside-h3">Monster Type</h3>
+                    <ul class="type-ul list-group">
+                        {{#each data.elements}}
+                        <li class="type-li  list-group-item single-li">
+                            {{type}}
+                        </li>
+                        {{/each}}
+                    </ul>
+                    <h3 class="aside-h3">Monster weakness</h3>
+                    <ul class="weakness-ul list-group">
+                        {{#each data.weakness}}
+                        <li class="weakness-li list-group-item single-li">
+                            {{type}}
+                        </li>
+                        {{/each}}
+                    </ul>
+                    <h3 class="aside-h3">Monster Resistance</h3>
+                    <ul class="resistance-ul list-group">
+                        {{#each data.resistance}}
+                        <li class="resistance-li list-group-item single-li">
+                            {{type}}
+                        </li>
+                        {{/each}}
+                    </ul>
+                </aside>
+            </div>
+        </div>
+    </section>
+</main>
